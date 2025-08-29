@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#F5FFF6]">
+    
     <!-- Navbar Section Start  -->
    <nav class=" w-11/12 mx-auto flex gap-3 font-bold text-[#006747] justify-between items-center mt-5"
-
+        
     <div>
         <div class="flex gap-3">
         <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="logo">
@@ -20,14 +21,16 @@
         </div>
     </div>
 
+    <!-- Nav Right Side-->
+
     <div class="flex gap-3 m-2]">
         <div class="flex bg-[#ECFFF0] w-[123px] h-[52px] items-center justify-center rounded-3xl gap-3">
-            <p>0</p>
+            <p id="heartDisplay">0</p>
             <img class="w-[25px] h-[23px]" src="./assets/heart.png" alt="">
         </div>
 
         <div class="flex bg-[#ECFFF0] w-[123px] h-[52px] items-center justify-center rounded-3xl gap-3">
-            <p>100</p>
+            <p id="coinDisplay">100</p>
             <img class="w-[25px] h-[23px]" src="./assets/coin.png" alt="">
         </div>
 
@@ -37,6 +40,7 @@
 
     </div>
 </nav>
+
 <!-- Banner Section Start -->
 <section class="mt-6 bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] h-[239px] w-full flex flex-col justify-center items-center gap-3">
     <img  class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
@@ -51,7 +55,7 @@
         <div id="box-parent" class="w-70 bg-[#ffffff] p-6 shadow-sm rounded-2xl">
             <div class="flex justify-between items-center">
                 <img  class="w-8 h-8 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="">
-                <i class="fa-regular fa-heart"></i>  
+                <i id="loveBtn" class="fa-regular fa-heart"></i>  
             </div>
 
             <div class="mb-2 mt-4">
@@ -219,6 +223,7 @@
                 <i class="fa-regular fa-heart"></i>
                 
             </div>
+
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Brac Helpline</h2>
                 <p class="text-gray-500">Brac</p>
