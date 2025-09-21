@@ -35,7 +35,7 @@
         </div>
 
         <div class="bg-[#00A63E] w-[123px] h-[52px] rounded-3xl flex gap-3 justify-center items-center text-white">
-            <p><span>2</span> Copy</p>
+            <p><span id="copyDisplay">0</span> Copy</p>
         </div>
 
     </div>
@@ -64,11 +64,11 @@
             </div>
 
             <div>
-                 <h2 class="font-bold text-xl mb-1">999</h2>
+                 <h2 class="font-bold text-xl mb-1" id="helplineNumber">999</h2>
                 <p class="text-gray-500 bg-[#F2F2F2] h-[37px] w-[53px] text-center rounded-3xl pt-1.5 mb-3">All</p>
             </div>
             <div class="flex gap-2">
-                <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
+                <button type="button" id="copybtn" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
                 <button id="callBtn" type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
