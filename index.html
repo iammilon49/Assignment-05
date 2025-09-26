@@ -8,8 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F5FFF6]">
+<body class="bg-[#F5FFF6] font-inter">
     
     <!-- Navbar Section Start  -->
 <nav class=" w-11/12 mx-auto flex gap-3 font-bold text-[#006747] justify-between items-center mt-5"
@@ -62,7 +66,7 @@
 
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >National Emergency Number</h2>
-                <p id="serviceName" class="text-gray-500">National Emergency</p>
+                <p class="text-gray-500 serviceName">National Emergency</p>
             </div>
 
             <div>
@@ -72,7 +76,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button id="callBtn" type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -96,7 +100,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -120,7 +124,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -144,7 +148,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -158,7 +162,7 @@
             </div>
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Women & Child Helpline</h2>
-                <p class="text-gray-500">Women & Child Helpline</p>
+                <p class="text-gray-500 serviceName">Women & Child Helpline</p>
             </div>
             <div>
                  <h2 class="font-bold text-xl mb-1 helplineNumber">109</h2>
@@ -167,7 +171,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -181,7 +185,7 @@
             </div>
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Anti-Corruption Helpline</h2>
-                <p class="text-gray-500">Anti-Corruption</p>
+                <p class="text-gray-500 serviceName">Anti-Corruption</p>
             </div>
             <div>
                  <h2 class="font-bold text-xl mb-1 helplineNumber">106</h2>
@@ -190,7 +194,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -204,7 +208,7 @@
             </div>
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Electricity Helpline</h2>
-                <p class="text-gray-500">Electricity Outage</p>
+                <p class="text-gray-500 serviceName">Electricity Outage</p>
             </div>
             <div>
                  <h2 class="font-bold text-xl mb-1 helplineNumber">16216</h2>
@@ -213,7 +217,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -228,7 +232,7 @@
 
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Brac Helpline</h2>
-                <p class="text-gray-500">Brac</p>
+                <p class="text-gray-500 serviceName">Brac</p>
             </div>
             <div>
                  <h2 class="font-bold text-xl mb-1 helplineNumber">16445</h2>
@@ -237,7 +241,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
 
@@ -251,7 +255,7 @@
             </div>
             <div class="mb-2 mt-4">
                 <h2 class="font-bold text-base" >Bangladesh Railway Helpline</h2>
-                <p class="text-gray-500">Bangladesh Railway</p>
+                <p class="text-gray-500 serviceName">Bangladesh Railway</p>
             </div>
             <div>
                  <h2 class="font-bold text-xl mb-1 helplineNumber">163</h2>
@@ -260,7 +264,7 @@
             <div class="flex gap-2">
                 <button type="button" class="w-[160px] h-[40px] border-1 border-solid border-gray-300 rounded-2xl opacity-80 hover:cursor-pointer copybtn"><span><i class="fa-regular fa-copy opacity-80"></i></span> Copy</button>
 
-                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
+                <button type="button" class="bg-[#00A63E] w-[160px] h-[40px] rounded-2xl text-white hover:cursor-pointer callBtn" ><span><i class="fa-solid fa-phone text-white opacity-80"></i></span> Call</button>
             </div>
         </div>
     </section>

@@ -10,6 +10,8 @@ for(const lovebtnAll of loveBtn){
 });
 };
 
+
+
 // copy button
 const copyDisplay = document.getElementById('copyDisplay');
 let copiedNumber = 0;
@@ -33,30 +35,32 @@ for (const copyBtnSingle of copybtn2){
 
 
 // call btn 
-const serviceName = document.getElementById('serviceName');
 const coinDisplay = document.getElementById('coinDisplay');
 const callHistory = [];
-
 const historyContainer = document.getElementById('historyContainer');
 const date = new Date().toLocaleTimeString();
 let coins = 100;
-const serviceNumber = document.getElementById('serviceNumber');
-const callBtn = document.getElementById('callBtn');
-callBtn.addEventListener("click", () => {
-    if(coins >= 20){
-        alert(`Confirm call to ${serviceName.innerText}: ${helplineNumber.innerText}?`);
-        coins = coins - 20;
-        coinDisplay.innerText=coins;
-        
-        const callData = {
-            name: serviceName.innerText,
-            number: helplineNumber.innerText};
+
+
+const callBtn = document.querySelectorAll('.callBtn');
+for(const callBtnSingle of callBtn){
+    callBtnSingle.addEventListener("click", (e) => {
+        const card = e.target.closest('.box-parent');
+        const helpNumber = card.querySelector('.helplineNumber').innerText;
+        const serviceName = card.querySelector('.serviceName').innerText;
+        if(coins >= 20){
+            alert(`Confirm to call ${serviceName} : ${helpNumber}?`) 
+            coins = coins -20
+            coinDisplay.innerText=coins
+            
+            const callData = {
+            name: serviceName,
+            number: helpNumber};
             callHistory.push(callData);
             let call='';
             for(const callSingleData of callHistory){
                 call=callSingleData;
             }
-
             const div = document.createElement('div');
             div.innerHTML=`
             <div class="bg-[#FAFAFA] p-4 flex justify-between items-center mb-2">
@@ -69,13 +73,16 @@ callBtn.addEventListener("click", () => {
                     </div>
             </div>`
             historyContainer.append(div);
+        }
         
-}
-else{
+        else{
     alert('Sorry! You Do not have enough coins to call.')
 }
-    
-});
+
+        
+    })
+}
+
 
 // HistoryClear
 const clearBtn = document.getElementById('clearBtn');
